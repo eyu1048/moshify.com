@@ -13,7 +13,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', Arial, Helvetica, sans-serif ;
     color: var(--color-body);
     font-size: 2.4rem;
     line-height: 1.5;
@@ -275,4 +275,88 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* card */
+
+.card{
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header, .card__body{
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.card--secondary .card__header{
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+/* Plan */
+.plan--popular .card__header{
+    position: relative;
+}
+
+.plan--popular .card__header::after{
+    content: url(../images/popular.svg);
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    top: -6px;
+    right: 5%;
+}
+
+.plan__name{
+    font-size: 2.4rem;
+    margin:0;
+    color: #fff;
+    font-weight: 500;
+ 
+}
+
+.plan__price{
+    font-size: 6rem;
+}
+
+.plan__billing-price{
+    font-size: 2.4rem;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-right: 0.8;
+}
+
+.plan__description{
+    display: block;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .plan__name{
+        font-size: 1.4rem;
+    }
+
+    .plan__price{
+        font-size: 5rem;
+    }
+
+    .plan__billing-cycle{
+        font-size: 1.6rem;
+    }
+
+    .plan__description{
+        font-size: 1.7rem;
+    }
+}
+
 
