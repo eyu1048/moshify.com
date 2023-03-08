@@ -235,6 +235,11 @@ a{
     color: #fff;
 }
 
+.btn--stretched{
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
 @media screen and (min-width:1024px) {
     .btn{
         font-size: 1.5rem;
@@ -501,4 +506,47 @@ a{
       }
     }
     
+
+/* call out */
+.callout{
+    color: #fff;
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary{
+    background: var(--color-primary);
+}
+
+.callout__heading{
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout__content{
+    text-align:center;
+    
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+
+
+@media screen  and (min-width:768px) {
+    .callout .grid--1X2{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content{
+        text-align: left;
+    }
+
+    .callout .btn{
+        justify-self: start;
+        margin: 0 2rem;
+    }
 }
