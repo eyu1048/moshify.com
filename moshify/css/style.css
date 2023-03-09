@@ -426,7 +426,7 @@ a{
 }
 
 /* Quote */
-.quote__text{
+.quote{
     font-style: italic;
     font-size: 3rem;
     color: var(--color-body-darker);
@@ -446,21 +446,23 @@ a{
     color: var(--color-headings);
     font-weight: 500;
     margin-bottom: 0;
+    font-style: normal;
 }
 
 .quote__organization{
     color: var(--color-headings);
     opacity: 0.4;
     font-size: 2rem;
+    font-style: normal;
 }
 
 .quote__line{
     position: relative;
-    top: 10px;
+    bottom: 10px;
 }
 
 @media screen and (min-width:1024px) {
-    .quote__text{
+    .quote{
         font-size: 2rem;
     }
 
@@ -500,7 +502,6 @@ a{
 .testmonials{
     padding: 3rem;
     
-    
 }
 
 .testmonial__image{
@@ -528,16 +529,16 @@ a{
 
 
 @media screen  and (min-width:768px) {
-    .testimonial__image {
+    .testmonial__image {
         margin: 0;
       }
     
-      .testimonial .quote,
-      .testimonial .quote__author {
+      .testmonials .quote,
+      .testmonials .quote__author {
         font-size:2.4rem;
       }
     
-      .testimonial .quote {
+      .testmonials .quote {
         margin-left: 6rem;
         margin-right: 0;
       }
@@ -633,6 +634,7 @@ a{
 
 .block__header{
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block--dark .block__heading{
@@ -841,3 +843,6 @@ a{
     margin-top: 2rem;
     }
 }
+
+/* Testmonial block */
+
