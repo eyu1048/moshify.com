@@ -408,6 +408,7 @@ a{
     display: flex;
 }
 
+
 .media__title{
     margin-top: 1rem;
 }
@@ -787,5 +788,24 @@ a{
     margin: 0 auto;
 }
 
+/* Feature block */
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+.block__img{
+    width: 100%;
+}
+
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .feature:nth-of-type(even) .feature__content{
+        order: 2;
+    }
+    
+}
 
 
