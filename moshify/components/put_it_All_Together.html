@@ -1,0 +1,60 @@
+<header>
+    <nav class="navigation-bar collapsible collapsible--expanded">
+        <a class="nav__brand" href="/"><img src="images/logo.png" alt="Our logo"></a>
+        <svg class="icon icon--white nav--toggler">
+            <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+
+        <ul class="list nav__list collapsible__content">
+            <li class="list__item"><a href="#">Hosting</a></li>
+            <li class="list__item"><a href="#">VPS</a></li>
+            <li class="list__item"><a href="#">Domain</a></li>
+            <li class="list__item"><a href="#">Pricing</a></li>
+        </ul>
+
+    </nav>
+</header>
+<section class="block block--dark hero">
+    <div class="container grid grid--1X2">
+        <header class="block__header hero__content">
+            <h1 class="block__heading">Cloud Hosting for Pros</h1>
+            <p class="hero__txt">Deploy your Website in less than 60 seconds.</p>
+            <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+
+        <picture>
+            <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
+            <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+            <img class="hero__image" src="images/banner.png" alt="" />
+        </picture>
+
+    </div>
+</section>
+
+<section class="block container domain--block">
+    <header class="block__header">
+        <h2>Starting at Per month</h2>
+        <p class="domain__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus sint
+            praesentium veniam!</p>
+    </header>
+    <div class="input-group">
+        <input type="text" placeholder="Enter domain name here..." class="input">
+        <button class="btn btn--accent block__input-icon">
+            <svg class="icon  icon--primary icon--small">
+                <use xlink:href="images/sprite.svg#search"></use>
+            </svg> search
+            <!-- <button class="btn btn--accent">Search</button> -->
+        </button>
+
+    </div>
+    <ul class="list domain__list">
+        <li><span class="badge badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+
+    </ul>
+
+</section>
